@@ -82,6 +82,52 @@
 
 
 
+    // $('section').on('mousemove', function (e) {
+    //     var posX = e.pageX //현재 마우스 위치의 x 좌표값
+    //     var posY = e.pageY
+    //     $('section').eq(0).find('img:nth-of-type(1)').css({
+    //         right: 20 - (posX / 30),
+    //         bottom: 20 - (posY / 30)
+    //     })
+    //     $('section').eq(0).find('img:nth-of-type(2)').css({
+    //         right: 130 - (posX / 20),
+    //         bottom: -40 - (posY / 20)
+    //     })
+    // })
+    $('section').on('mousemove',function(e) {
+        var posX = e.pageX // 현재 마우스가 위치한 지점의 X좌표
+        var posY = e.pageY // 현재 마우스가 위치한 지점의 Y좌표
+        $("section:nth-child(1) img:nth-of-type(1)").css({
+            right:20-(posX/30), bottom:20-(posY/30)     })
+        $("section:nth-child(1) img:nth-of-type(2)").css({
+            right:130-(posX/20), bottom:-40-(posY/20)   })
+        $("section:nth-child(1) img:nth-of-type(3)").css({
+            right:60+(posX/20), top:180+(posY/20)       })
+    
+        $("section:nth-child(2) img:nth-of-type(1)").css({ 
+            right:-180-(posX/30), bottom:-480-(posY/30) })
+        $("section:nth-child(2) img:nth-of-type(2)").css({ 
+            right:130+(posX/50), bottom:-40+(posY/50) })
+    
+        $("section:nth-child(3) img:nth-of-type(1)").css({
+            right:280-(posX/30), bottom:30-(posY/30) })
+        $("section:nth-child(3) img:nth-of-type(2)").css({
+            right:110+(posX/20), bottom:-270+(posY/20) })
+        $("section:nth-child(3) img:nth-of-type(3)").css({
+            right:-70+(posX/20), bottom:-130+(posY/20) })
+        
+
+        $("section:nth-child(4) img:nth-of-type(1)").css({
+            right:20-(posX/30), bottom:120-(posY/30) })
+        $("section:nth-child(4) img:nth-of-type(2)").css({
+            right:0+(posX/20), bottom:-180+(posY/20) })
+
+
+    })
+
+    
+})(jQuery)
+
 
     // 꽃 움직이는 거
     // $('section').on('mousemove', function(e){
@@ -102,28 +148,8 @@
     //     })
         
 
-})(jQuery)
 
 
-// $("section:nth-child(1) img:nth-of-type(1)").css({
-//     right:20-(posX/30), bottom:20-(posY/30)     })
-// $("section:nth-child(1) img:nth-of-type(2)").css({
-//     right:130-(posX/20), bottom:-40-(posY/20)   })
-// $("section:nth-child(1) img:nth-of-type(3)").css({
-//     right:60+(posX/20), top:180+(posY/20)       })
 
-// $("section:nth-child(2) img:nth-of-type(1)").css({ 
-//     right:-180-(posX/30), bottom:-480-(posY/30) })
-// $("section:nth-child(2) img:nth-of-type(2)").css({ 
-//     right:130+(posX/50), bottom:-40+(posY/50) })
-
-// $("section:nth-child(3) img:nth-of-type(1)").css({
-//     right:280-(posX/30), bottom:30-(posY/30) })
-// $("section:nth-child(3) img:nth-of-type(2)").css({
-//     right:110+(posX/20), bottom:-270+(posY/20) })
-// $("section:nth-child(3) img:nth-of-type(3)").css({
-//     right:-70+(posX/20), bottom:-130+(posY/20) })	        
-// $("section:nth-child(4) img:nth-of-type(1)").css({
-//     rig
-
+    
 
